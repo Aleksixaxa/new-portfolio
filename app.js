@@ -1,9 +1,12 @@
 let main = document.querySelector('.content-placeholder');
-
+let modal = document.querySelector('.modal');
+let modalButton = document.querySelector('.modal-close');
+let modalContent = document.querySelector('.modal-content');
 class newProject {
-  constructor(name, tech, pic, github, link) {
+  constructor(name, tech, desc, pic, github, link) {
     this.name = name;
     this.tech = tech;
+    this.desc = desc;
     this.pic = pic;
     this.github = github;
     this.link = link;
@@ -12,35 +15,40 @@ class newProject {
 
 const project1 = new newProject(
   'Recipe searcher',
-  ['react.js', 'api', 'html/css'],
+  ['React.Js', 'Recipe Api', 'HTML', 'CSS', 'Sass'],
+  'React app, that lets you find search recipes from an api and then returns the steps and images of how to make the recipe.',
   '../pics/projects/recipe.png',
-  'thisislink.com',
-  'thisislink.com'
+  'https://github.com/Aleksixaxa/Recipe-searcher-react',
+  'https://recipe-searcher-101.netlify.app'
 );
 const project2 = new newProject(
-  'Recipe searcher',
-  ['react.js', 'api', 'html/css'],
-  '../pics/projects/recipe.png',
-  'thisislink.com',
-  'thisislink.com'
+  'Landing page',
+  ['weather api', 'HTML', 'CSS', 'Sass'],
+  'Clean UI for mobile and computer to greet you and change the wallpaper depending on the time.',
+  '../pics/projects/landing.png',
+  'https://github.com/Aleksixaxa/landing-page-dva',
+  'https://home-page-dva.netlify.app'
 );
 const project3 = new newProject(
-  'Recipe searcher',
+  'Recipe 3',
   ['react.js', 'api', 'html/css'],
+  '',
   '../pics/projects/recipe.png',
   'thisislink.com',
   'thisislink.com'
 );
 const project4 = new newProject(
-  'Recipe searcher',
+  'paragraph maker',
   ['react.js', 'api', 'html/css'],
+  '',
   '../pics/projects/recipe.png',
   'thisislink.com',
   'thisislink.com'
 );
 const project5 = new newProject(
-  'Recipe searcher',
+  'api',
   ['react.js', 'api', 'html/css'],
+  '',
   '../pics/projects/recipe.png',
   'thisislink.com',
   'thisislink.com'
@@ -59,5 +67,37 @@ projects.forEach((e) => {
 
   main.appendChild(container);
 
-  //   container.addEventListener('click', () => {});
+  container.addEventListener('click', () => {
+    openModal(e);
+    modalContent.innerHTML = `
+    <div class="modal-info">
+      <h1>${e.name}</h1>
+      <h5>${e.tech.join(', ')}</h5>
+      <h3>Description</h3>
+      <p>${e.desc}</p>
+    </div>
+    <div class="links">
+      <a href="${e.github}">View Code</a>
+      <a href="${e.link}">View Page</a>
+    </div
+    `;
+  });
+  modalButton.addEventListener('click', () => {
+    closeModal(e);
+  });
 });
+
+function openModal(obj) {
+  modal.classList.add('modal-open');
+  console.log(obj.name);
+
+  let overlay = document.createElement('div');
+  overlay.id = 'modal-overlay';
+  document.body.appendChild(overlay);
+}
+
+function closeModal(obj) {
+  modal.classList.remove('modal-open');
+  document.body.removeChild(document.querySelector('#modal-overlay'));
+  console.log(obj.name);
+}
