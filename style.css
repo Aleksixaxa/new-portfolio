@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+* {
+  color: white;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: #1d1d1d;
+  margin-top: 1em;
+  background: rgba(0, 0, 0, 0.8) url("pics/wp.jpg");
+  background-blend-mode: darken;
+}
+
+nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding: 1em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-transform: uppercase;
+}
+
+nav .nav-list li a {
+  text-decoration: none;
+  border: rgba(255, 255, 255, 0.658) 2px solid;
+  padding: 0.5em 0.8em;
+}
+
+nav .nav-list #projects {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.main-index {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main-index .colored-text {
+  color: #4fdfe4;
+}
+
+.main-index h1 {
+  font-size: 5em;
+}
+
+.main-index .line {
+  margin: 1em 1em;
+  height: 1px;
+  width: 20%;
+  background: white;
+}
+
+.main-index p {
+  font-size: 1.2em;
+}
+
+.arrow {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.arrow .go-back {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 30px;
+  height: 30px;
+}
+
+.content-placeholder {
+  display: -ms-grid;
+  display: grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.content-placeholder .project-container {
+  margin: 50px;
+}
+
+.content-placeholder .project-container img {
+  height: 300px;
+  width: 400px;
+  -webkit-box-shadow: 7px 8px 8px 0px rgba(0, 0, 0, 0.67);
+          box-shadow: 7px 8px 8px 0px rgba(0, 0, 0, 0.67);
+  cursor: pointer;
+}
+
+.content-placeholder .project-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.resumes-container {
+  height: 90vh;
+  margin: 50px 1em;
+}
+
+.resumes-container .pdf-download-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.resumes-container .pdf-download-section .pdf-image {
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 8px 8px 0px rgba(0, 0, 0, 0.67);
+          box-shadow: 7px 8px 8px 0px rgba(0, 0, 0, 0.67);
+}
+
+.resumes-container .pdf-download-section .links-pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+}
+
+.resumes-container .pdf-download-section .links-pdf a {
+  text-decoration: none;
+  padding: 1em 3em;
+  background-color: #1d1d1d;
+  margin-bottom: 10px;
+  border: rgba(255, 255, 255, 0.658) 2px solid;
+}
+
+.line-resume {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 1px;
+  width: 100vh;
+  background: rgba(255, 255, 255, 0.658);
+}
+/*# sourceMappingURL=style.css.map */
