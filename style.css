@@ -178,12 +178,31 @@ nav .nav-list #projects {
   background-color: #1d1d1d;
   margin-bottom: 10px;
   border: rgba(255, 255, 255, 0.658) 2px solid;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.modal-open .modal-content .links a:hover {
+  color: #1d1d1d;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  background-color: white;
+  font-weight: 550;
 }
 
 .modal-close {
+  margin: 10px;
   position: absolute;
   top: 0;
   right: 0;
+  background-color: white;
+  color: #1d1d1d;
+  border: none;
+}
+
+.modal-close:hover {
+  background-color: #1d1d1d;
+  color: white;
 }
 
 .resumes-container {

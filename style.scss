@@ -143,14 +143,29 @@ nav {
         background-color: #1d1d1d;
         margin-bottom: 10px;
         border: rgba(255, 255, 255, 0.658) 2px solid;
+        transition: all ease-in-out 0.3s;
+      }
+      a:hover {
+        color: #1d1d1d;
+        transition: ease-in 0.3s;
+        background-color: white;
+        font-weight: 550;
       }
     }
   }
 }
 .modal-close {
+  margin: 10px;
   position: absolute;
   top: 0;
   right: 0;
+  background-color: white;
+  color: #1d1d1d;
+  border: none;
+}
+.modal-close:hover {
+  background-color: #1d1d1d;
+  color: white;
 }
 
 // resume.html
