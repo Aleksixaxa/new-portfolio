@@ -37,7 +37,6 @@ nav {
         color: #1d1d1d;
         transition: ease-in 0.3s;
         background-color: white;
-        font-weight: 550;
       }
     }
 
@@ -149,7 +148,6 @@ nav {
         color: #1d1d1d;
         transition: ease-in 0.3s;
         background-color: white;
-        font-weight: 550;
       }
     }
   }
@@ -201,6 +199,12 @@ nav {
         background-color: #1d1d1d;
         margin-bottom: 10px;
         border: $borderText;
+        transition: all 0.3s ease-in-out;
+      }
+      a:hover {
+        color: #1d1d1d;
+        transition: ease-in 0.3s;
+        background-color: white;
       }
     }
   }

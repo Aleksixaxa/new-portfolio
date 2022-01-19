@@ -42,7 +42,6 @@ nav .nav-list li a:hover {
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
   background-color: white;
-  font-weight: 550;
 }
 
 nav .nav-list #projects {
@@ -187,7 +186,6 @@ nav .nav-list #projects {
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
   background-color: white;
-  font-weight: 550;
 }
 
 .modal-close {
@@ -246,6 +244,15 @@ nav .nav-list #projects {
   background-color: #1d1d1d;
   margin-bottom: 10px;
   border: rgba(255, 255, 255, 0.658) 2px solid;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.resumes-container .pdf-download-section .links-pdf a:hover {
+  color: #1d1d1d;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  background-color: white;
 }
 
 .line-resume {
