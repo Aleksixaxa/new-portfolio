@@ -31,10 +31,14 @@ nav {
         text-decoration: none;
         border: rgba(255, 255, 255, 0.658) 2px solid;
         padding: 0.5em 0.8em;
+        transition: all 0.3s ease-in-out;
       }
-      // a::hover {
-      //   // animation: fadein 2s;
-      // }
+      a:hover {
+        color: #1d1d1d;
+        transition: ease-in 0.3s;
+        background-color: white;
+        font-weight: 550;
+      }
     }
 
     #projects {
@@ -70,14 +74,6 @@ nav {
 }
 
 // projects.html
-.arrow {
-  flex: 0.5;
-  .go-back {
-    transform: rotate(180deg);
-    width: 30px;
-    height: 30px;
-  }
-}
 
 .content-placeholder {
   display: grid;
@@ -94,6 +90,7 @@ nav {
       box-shadow: 7px 8px 8px 0px rgba(0, 0, 0, 0.67);
       cursor: pointer;
       border-radius: $borderRadius;
+      transition: all 0.5s ease-in-out;
     }
     img:hover {
       transform: scale(1.1);

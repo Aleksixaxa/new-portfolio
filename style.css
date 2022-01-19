@@ -33,6 +33,16 @@ nav .nav-list li a {
   text-decoration: none;
   border: rgba(255, 255, 255, 0.658) 2px solid;
   padding: 0.5em 0.8em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .nav-list li a:hover {
+  color: #1d1d1d;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  background-color: white;
+  font-weight: 550;
 }
 
 nav .nav-list #projects {
@@ -78,19 +88,6 @@ nav .nav-list #projects {
   font-size: 1.2em;
 }
 
-.arrow {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
-}
-
-.arrow .go-back {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  width: 30px;
-  height: 30px;
-}
-
 .content-placeholder {
   display: -ms-grid;
   display: grid;
@@ -111,6 +108,8 @@ nav .nav-list #projects {
           box-shadow: 7px 8px 8px 0px rgba(0, 0, 0, 0.67);
   cursor: pointer;
   border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .content-placeholder .project-container img:hover {
