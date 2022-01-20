@@ -15,7 +15,7 @@ class newProject {
 
 const project1 = new newProject(
   'Recipe searcher',
-  ['React.Js', 'Recipe Api', 'HTML', 'CSS', 'Sass'],
+  ['React.Js', 'Recipe API', 'HTML', 'CSS', 'Sass'],
   'React app, that lets you find search recipes from an api and then returns the steps and images of how to make the recipe.',
   '../pics/projects/recipe.png',
   'https://github.com/Aleksixaxa/Recipe-searcher-react',
@@ -23,7 +23,7 @@ const project1 = new newProject(
 );
 const project2 = new newProject(
   'Landing page',
-  ['weather api', 'HTML', 'CSS', 'Sass'],
+  ['Javascript ES6+', 'Weather API', 'HTML', 'CSS', 'Sass'],
   'Clean UI for mobile and computer to greet you and change the wallpaper depending on the time.',
   '../pics/projects/landing.png',
   'https://github.com/Aleksixaxa/landing-page-dva',
@@ -31,11 +31,11 @@ const project2 = new newProject(
 );
 const project3 = new newProject(
   'Recipe 3',
-  ['react.js', 'api', 'html/css'],
-  '',
-  '../pics/projects/recipe.png',
-  'thisislink.com',
-  'thisislink.com'
+  ['Javascript ES6+', 'HTML', 'CSS'],
+  'To-do app that lets you add items to the list and stores them in an array in local storage, all having an individual key to also remove them',
+  '../pics/projects/todo.png',
+  'https://github.com/Aleksixaxa/To-Do-App',
+  'https://todo-app-aleksi.netlify.app'
 );
 const project4 = new newProject(
   'paragraph maker',
@@ -77,8 +77,8 @@ projects.forEach((e) => {
       <p>${e.desc}</p>
     </div>
     <div class="links">
-      <a href="${e.github}">View Code</a>
-      <a href="${e.link}">View Page</a>
+      <a target="_blank" href="${e.github}">View Code</a>
+      <a target="_blank" href="${e.link}">View Page</a>
     </div
     `;
   });
